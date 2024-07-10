@@ -11,6 +11,9 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: var(--textcolor);
 }
+::-webkit-scrollbar {
+  display: none;
+}
 html,
 body {
   background-color: var(--bgcolor);
@@ -34,6 +37,27 @@ header {
 .name {
   font-size: 30px;
   font-weight: 500;
+  width: 0;
+  overflow: hidden;
+  padding-right: 2px;
+  border-right: 2px solid var(--textcolor);
+  white-space: nowrap;
+  animation: typing 2s cubic-bezier(0, 0, 0, 1.02) infinite,
+    blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--textcolor);
+  }
 }
 nav ul {
   display: flex;
@@ -109,14 +133,18 @@ a {
 #tictactoe,
 #emailvalid {
   font-size: 20px;
-  background-color: rgb(36, 36, 36);
+  background-color: var(--navbg);
   padding: 10px;
   border-radius: 10px;
-}
-.hide {
-  display: none;
   height: 0;
+  overflow: hidden;
+  transition: height 0.5s ease, padding 0.5s ease;
 }
+
+.hide {
+  padding: 0 !important;
+}
+
 p {
   font-size: 20px;
 }
@@ -126,11 +154,21 @@ nav ul li:hover {
   text-underline-offset: 5px;
 }
 nav ul li {
-  transition: all 0.3s linear;
+  transition: font-weight 0.3s linear;
 }
 .trans:hover {
   font-weight: 900;
 }
 .trans {
-  transition: all 0.3s linear;
+  transition: font-weight 0.3s linear;
+}
+.mode {
+  background-color: var(--textcolor);
+  color: var(--bgcolor);
+  position: fixed;
+  top: 110px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 400;
 }
