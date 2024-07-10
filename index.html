@@ -3,7 +3,142 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio - Home</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <div class="name">Saif Ansari</div>
+        <ul>
+          <a href="#about">
+            <li>About me</li>
+          </a>
+          <a href="#projects">
+            <li>Projects</li>
+          </a>
+          <a href="#skills">
+            <li>Skills</li>
+          </a>
+          <a href="#contact">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="about">
+        <div class="text">
+          <h2>About Me</h2>
+          <div>
+            <p>
+              Hi! I am Saif Ansari and am a web developer. I am currently in my
+              third year of studying for a Bachelor of Engineering degree in
+              Information Technology at Mumbai University.
+            </p>
+
+            <p>
+              In my free time, i like to study more about data structures and
+              algorithms and how computers work internally.
+            </p>
+            <p>
+              Fun fact: I’ve been programming for
+              <span id="time"></span> seconds!
+            </p>
+          </div>
+        </div>
+        <div class="img">
+          <img src="./assets/Images/Saif.jpg" alt="My image" width="250" />
+        </div>
+      </div>
+      <div id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <img src="./assets/Images/arrow.svg" alt="" />
+            <div id="net">Netflix Main Page (DESIGN ONLY)</div>
+          </li>
+          <div class="hide" id="netflix">
+            <div class="imgs">
+              <img src="./assets/Images/netflix 1.png" alt="Image 1" />
+              <img src="./assets/Images/netflix 2.png" alt="Image 2" />
+              <img src="./assets/Images/netflix 3.png" alt="Image 3" />
+              <img src="./assets/Images/netflix 4.png" alt="Image 4" />
+              <img src="./assets/Images/netflix 5.png" alt="Image 5" />
+            </div>
+            <p>
+              This is my first project. It is only the design of the main page
+              of netflix using html and css.
+            </p>
+          </div>
+          <li>
+            <img src="./assets/Images/arrow.svg" alt="" />
+            <div id="tic">TIC-TAC-TOE</div>
+          </li>
+          <div class="hide" id="tictactoe">
+            <div class="imgs">
+              <img src="./assets/Images/Tic Tac Toe (1).png" alt="Image 1" />
+              <img src="./assets/Images/Tic Tac Toe (2).png" alt="Image 2" />
+              <img src="./assets/Images/Tic Tac Toe (3).png" alt="Image 3" />
+              <img src="./assets/Images/Tic Tac Toe (4).png" alt="Image 4" />
+            </div>
+            <p>Tic Tac Toe game created using html, css and javascript.</p>
+          </div>
+          <li>
+            <img src="./assets/Images/arrow.svg" alt="" />
+            <div id="email">Email validator</div>
+          </li>
+          <div class="hide" id="emailvalid">
+            <div class="imgs">
+              <img src="./assets/Images/Email (1).png" alt="Image 1" />
+              <img src="./assets/Images/Email (2).png" alt="Image 2" />
+              <img src="./assets/Images/Email (3).png" alt="Image 3" />
+              <img src="./assets/Images/Email (4).png" alt="Image 4" />
+            </div>
+            <p>
+              This web app tells whether the entered email is a valid email or
+              not, if it is then it will tell more information about that email.
+              It is created using email validator API.
+            </p>
+          </div>
+        </ul>
+      </div>
+      <div id="skills">
+        <h2>Skills</h2>
+        <div class="skill-container">
+          <img src="./assets/Images/html.svg" alt="HTML" />
+          <img src="./assets/Images/css.svg" alt="CSS" />
+          <img src="./assets/Images/js.svg" alt="JS" />
+          <img src="./assets/Images/node.svg" alt="NODE" />
+          <img src="./assets/Images/react.svg" alt="REACT" />
+          <img src="./assets/Images/git.svg" alt="GIT" />
+          <img src="./assets/Images/github.svg" alt="GITHUB" />
+          <img src="./assets/Images/python.svg" alt="PYTHON" />
+          <img src="./assets/Images/c.svg" alt="C" />
+          <img src="./assets/Images/java.svg" alt="JAVA" />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="contact">
+        <h2>Contact</h2>
+        <p>Contact me at saifffansari00@gmail.com</p>
+        <div class="social">
+          <p>OR</p>
+          <div class="social-img">
+            <a href="https://www.instagram.com/__saifff__/" target="_blank">
+              <img src="./assets/Images/instagram.svg" alt="Instagram" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ansari-saifff-188736278/"
+              target="_blank"
+            >
+              <img src="./assets/Images/linkedin.svg" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
