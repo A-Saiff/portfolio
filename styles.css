@@ -172,3 +172,11 @@ nav ul li {
   cursor: pointer;
   font-weight: 400;
 }
+
+.img img {
+  border-radius: 50%;
+  transition: all 0.7s ease;
+}
+.img img:hover {
+  border-radius: 20px;
+}
